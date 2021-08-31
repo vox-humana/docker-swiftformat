@@ -20,3 +20,4 @@ FROM swift:slim
 COPY --from=builder /usr/bin/swiftformat /usr/bin
 
 RUN swiftformat --version
+CMD ["swiftformat", "."]

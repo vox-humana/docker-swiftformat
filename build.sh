@@ -7,5 +7,5 @@ SWIFT_FORMAT_VERSION=$(cat swiftformat-version)
 docker build \
 --platform linux/amd64 \
 --build-arg swift_format_version=$SWIFT_FORMAT_VERSION \
--t swift-format-$SWIFT_FORMAT_VERSION \
+-t semenyutin/swiftformat:$SWIFT_FORMAT_VERSION \
 .
