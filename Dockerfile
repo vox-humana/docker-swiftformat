@@ -1,14 +1,8 @@
 FROM swift:latest as builder
 
-RUN apt-get update && apt-get install -y curl
-
 ARG swift_format_version
-ENV SWIFTFORMAT_ARCHIVE="https://github.com/nicklockwood/SwiftFormat/archive/${swift_format_version}.tar.gz"
 
-# git clone crashes quemu on M1
-RUN curl -LSs --fail -o swiftformat.tgz -- "${SWIFTFORMAT_ARCHIVE}" \
-  && tar -xzf swiftformat.tgz \
-  && mv "./SwiftFormat-${swift_format_version}" ./SwiftFormat \
+RUN git clone --branch $swift_format_version https://github.com/nicklockwood/SwiftFormat.git \
   && cd SwiftFormat \
   && swift build -c release \
   && mv `swift build -c release --show-bin-path`/swiftformat /usr/bin \
