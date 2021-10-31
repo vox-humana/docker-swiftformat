@@ -4,7 +4,9 @@ Wraps [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) into [Docker im
 
 By default, container runs `swiftformat .` so you need to provide the right path either by changing the working dir or as an argument.
 Examples:
+
 `docker run --rm -v local_source_dir:/work  semenyutin/swiftformat:latest /work`
+
 `docker run --rm -v local_source_dir:/work -w /work semenyutin/swiftformat:latest`
 
 To check installed SwiftFormat version:
@@ -28,5 +30,7 @@ More links:
 ## Multiplatform
 
 Need to create build instance first (only once):
+
 `docker buildx create --use`
+
 `docker buildx build --build-arg swift_format_version=0.48.17 --platform linux/amd64,linux/arm64 -t semenyutin/swiftformat:0.48.17 .`
