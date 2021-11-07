@@ -1,3 +1,5 @@
+![Build](https://github.com/vox-humana/docker-swiftformat/workflows/Docker%20Hub%20Publishing/badge.svg)
+
 Wraps [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) into [Docker image](https://hub.docker.com/r/semenyutin/swiftformat).
 
 # Usage
