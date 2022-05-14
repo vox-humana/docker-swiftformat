@@ -1,6 +1,7 @@
-![Build](https://github.com/vox-humana/docker-swiftformat/workflows/Docker%20Hub%20Publishing/badge.svg)
+[![Build and Publish](https://github.com/vox-humana/docker-swiftformat/actions/workflows/build.yml/badge.svg)](https://github.com/vox-humana/docker-swiftformat/actions/workflows/build.yml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/semenyutin/swiftformat)](https://hub.docker.com/r/semenyutin/swiftformat/tags)
 
-Wraps [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) into [Docker image](https://hub.docker.com/r/semenyutin/swiftformat).
+Wraps [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) into a Docker image.
 
 # Usage
 
