@@ -1,6 +1,10 @@
 [![Build and Publish](https://github.com/vox-humana/docker-swiftformat/actions/workflows/build.yml/badge.svg)](https://github.com/vox-humana/docker-swiftformat/actions/workflows/build.yml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/semenyutin/swiftformat)](https://hub.docker.com/r/semenyutin/swiftformat/tags)
 
+
+# ⚠️ Deprecated, please switch to [the offical SwiftFormat image](https://github.com/nicklockwood/SwiftFormat#docker)
+
+
 Wraps [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) into a Docker image.
 
 # Usage
